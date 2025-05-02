@@ -1,11 +1,11 @@
-# kafka-event-hub.gemspec
+# kafka_event_hub.gemspec
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "kafka_event_hub/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "kafka-event-hub"
+  spec.name          = "kafka_event_hub"
   spec.version       = KafkaEventHub::VERSION
   spec.authors       = ["Marryam Shahzad"]
   spec.email         = ["marryamshahzad75@gmail.com"]
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   DESC
 
   # Once this gem is published, its RubyGems page will be:
-  spec.homepage      = "https://rubygems.org/gems/kafka-event-hub"
+  spec.homepage      = "https://rubygems.org/gems/kafka_event_hub"
   spec.license       = "MIT"
 
   # Only allow pushing to RubyGems.org
