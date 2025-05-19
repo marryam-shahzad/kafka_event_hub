@@ -15,14 +15,16 @@ Gem::Specification.new do |spec|
     Centralizes ENV-based Rd-kafka setup into a single gem.
   DESC
 
-  # Once this gem is published, its RubyGems page will be:
-  spec.homepage      = "https://rubygems.org/gems/kafka_event_hub"
+  # Homepage and source links
+  spec.homepage      = "https://github.com/marryam-shahzad/kafka_event_hub"
   spec.license       = "MIT"
 
-  # Only allow pushing to RubyGems.org
+  # Only allow pushing to RubyGems.org and link to GitHub
   if spec.respond_to?(:metadata)
     spec.metadata["allowed_push_host"] = "https://rubygems.org"
     spec.metadata["homepage_uri"]      = spec.homepage
+    spec.metadata["source_code_uri"]   = "https://github.com/marryam-shahzad/kafka_event_hub"
+    spec.metadata["documentation_uri"] = "https://github.com/marryam-shahzad/kafka_event_hub/blob/master/README.md"
   end
 
   # Files to include in the gem
@@ -36,5 +38,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake",    "~> 10.0"
   spec.add_development_dependency "rspec",   "~> 3.0"
-  spec.add_dependency 'uri', '~> 1.0.3'
+  spec.add_dependency             "uri",     "~> 1.0.3"
 end
